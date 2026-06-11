@@ -122,7 +122,7 @@ for concid, value in concs.items():
     isimucho.set_concentration(concid, v)
 
 for fluxd in fluxes:
-
+    
     # for a randomized MID subset
     """
     if counter > 800:
@@ -152,4 +152,18 @@ for fluxd in fluxes:
 
     if frames:
         df = pd.concat(frames, axis=1)
-        df.to_csv(os.path.join("MID_simulated_random/", f"{fluxd}.csv"), index=False)
+        df.to_csv(os.path.join("MID_simulated/", f"{fluxd}.csv"), index=False)
+
+directory = r'MID_simulated'
+
+MID_8000 = pd.DataFrame()
+rand_list = []
+
+for filename in os.listdir(directory):
+    filepath = os.path.join(directory, filename)
+    file = pd.read_csv(filepath)
+    rand_list.append(file)
+
+MID_8000 = pd.concat(rand_list, axis=0)
+
+MID_8000.to_csv('MID_8000.csv')
