@@ -1,0 +1,75 @@
+,#reaction_ID,reactant_IDs(atom),product_IDs(atom),reversibility
+0,RBPCh,"['rb15bp[h]', 'co2[h]']","['3pg[h]', '3pg[h]']",False
+1,GAPDH_nadp_hi,['3pg[h]'],['dhap[h]'],False
+2,ALDh,"['dhap[h]', 'e4p[h]']",['s17bp[h]'],True
+3,SBPase,['s17bp[h]'],['s7p[h]'],False
+4,FBAh,"['dhap[h]', 'dhap[h]']",['fdp_B[h]'],True
+5,BFBPh,['fdp_B[h]'],['f6p_B[h]'],False
+6,TKT1h,"['dhap[h]', 's7p[h]']","['xu5p_D[h]', 'r5p[h]']",True
+7,TKT2h,"['dhap[h]', 'f6p_B[h]']","['e4p[h]', 'xu5p_D[h]']",True
+8,TAh,"['e4p[h]', 'f6p_B[h]']","['dhap[h]', 's7p[h]']",True
+9,RPEh,['xu5p_D[h]'],['ru5p_D[h]'],True
+10,RPIh,['r5p[h]'],['ru5p_D[h]'],True
+11,PRUK,['ru5p_D[h]'],['rb15bp[h]'],False
+12,RBCh,['rb15bp[h]'],"['3pg[h]', '2pglyc[h]']",False
+13,PGP,['2pglyc[h]'],['glyclt[h]'],False
+14,GCLDH,['glyclt[h]'],['glx[h]'],False
+15,T_glx,['glx[h]'],['glx[c]'],False
+16,GOU,"['glx[h]', 'glx[h]']","['co2[h]', 'ser_L[h]']",False
+17,T_SER,['ser_L[h]'],['ser_L[c]'],False
+18,PGIAh,['f6p_B[h]'],['g6p_A[h]'],True
+19,PGMTh,['g6p_A[h]'],['g1p[h]'],True
+20,GLPTHi,['g1p[h]'],['adpglc[h]'],False
+21,Biomass_starch,['adpglc[h]'],[],False
+22,FBAc,"['dhap[c]', 'dhap[c]']",['fdp_B[c]'],False
+23,FPPc,['fdp_B[c]'],['f6p_B[c]'],False
+24,PGIc,['f6p_B[c]'],['g6p_A[c]'],False
+25,PGMTc,['g6p_A[c]'],['g1p[c]'],False
+26,UG1PUT,['g1p[c]'],['udpg[c]'],False
+27,UFAGT,"['f6p_B[c]', 'udpg[c]']",[],False
+28,FGAM_c,['3pg[c]'],['pep[c]'],False
+29,PYK,['pep[c]'],['pyr[c]'],False
+30,PPC,"['pep[c]', 'co2[c]']",['oaa[c]'],False
+31,ALT,['pyr[c]'],['ala_L[c]'],True
+32,MDHc,['mal_L[c]'],['oaa[c]'],False
+33,ASPTc,['oaa[c]'],['asp_L[c]'],True
+34,GLUDHc,['akg[c]'],['glu_L[c]'],True
+35,EX_glu_L_c,['glu_L[c]'],[],False
+36,EX_asp_L_c,['asp_L[c]'],[],False
+37,T_T3P,['3pg[h]'],['3pg[c]'],True
+38,T_TP,['dhap[h]'],['dhap[c]'],True
+39,T_PEP,['pep[h]'],['pep[c]'],True
+40,CO2t,['co2[e]'],['co2[c]'],False
+41,CO2th,['co2[c]'],['co2[h]'],True
+42,ENO_h,['3pg[h]'],['pep[h]'],True
+43,PYK_h,['pep[h]'],['pyr[h]'],False
+44,EX_pyr,['pyr[h]'],[],False
+45,EX_shikimate,['pep[h]'],[],False
+46,EX_co2_e,[],['co2[e]'],False
+47,EX_ala_L_c,['ala_L[c]'],[],False
+48,EX_glx_c,['glx[c]'],[],False
+49,EX_ser_c,['ser_L[c]'],[],False
+50,PDHm,['pyr[m]'],"['aca[m]', 'co2[m]']",False
+51,CSm,"['aca[m]', 'oaa[m]']",['cit[m]'],False
+52,ACONTm,['cit[m]'],['icit[m]'],True
+53,ICDHm,['icit[m]'],"['co2[m]', 'akg[m]']",False
+54,AKGDHm,['akg[m]'],"['co2[m]', 'sca[m]']",False
+55,SUCOASm,['sca[m]'],['succ[m]'],True
+56,SUCDm,['succ[m]'],['fum[m]'],True
+57,FUMm,['fum[m]'],['mal_L[m]'],True
+58,MDHm,['mal_L[m]'],['oaa[m]'],False
+59,ASPTAm,"['akg[m]', 'asp_L[m]']","['oaa[m]', 'glu_L[m]']",False
+60,AATm,"['akg[m]', 'ala_L[m]']","['pyr[m]', 'glu_L[m]']",True
+61,ICLm,['icit[m]'],"['succ[m]', 'glx[m]']",False
+62,MALSm,"['aca[m]', 'glx[m]']",['mal_L[m]'],False
+63,MEm,['mal_L[m]'],"['pyr[m]', 'co2[m]']",False
+64,PYKm,['pep[m]'],['pyr[m]'],False
+65,PYRtm,['pyr[c]'],['pyr[m]'],True
+66,MALtm,['mal_L[c]'],['mal_L[m]'],True
+67,OAAtm,['oaa[c]'],['oaa[m]'],True
+68,ASPtm,['asp_L[c]'],['asp_L[m]'],True
+69,GLUtm,['glu_L[c]'],['glu_L[m]'],True
+70,ALAtm,['ala_L[c]'],['ala_L[m]'],True
+71,PEPtm,['pep[c]'],['pep[m]'],True
+72,CO2tm,['co2[m]'],['co2[c]'],True
+73,AKGtm,['akg[m]'],['akg[c]'],True
