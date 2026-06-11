@@ -1,0 +1,75 @@
+#reaction.ID	reactant.IDs(atom)	product.IDs(atom)	reversibility
+RBPCh	rb15bpH(bcdef) + co2H(a)	n3pgH(a) + n3pgH(cef)	0
+GAPDH_nadp_hi	n3pgH(abc)	dhapH(cab)	0
+ALDh	dhapH(abc) + e4pH(defg)	s17bpH(becgafd)	1
+SBPase	s17bpH(abcdefg)	s7pH(abcdefg)	0
+FBAh	dhapH(ace) + dhapH(bdf)	fdpBH(cdeabf)	1
+BFBPh	fdpBH(abcdef)	f6pBH(abcdef)	0
+TKT1h	dhapH(abc) + s7pH(defghij)	xu5pDH(dbfca) + r5pH(hejgi)	1
+TKT2h	dhapH(abc) + f6pBH(defghi)	e4pH(hdgf) + xu5pDH(ebica)	1
+TAh	e4pH(abcd) + f6pBH(efghij)	dhapH(cbd) + s7pH(aefgjhi)	1
+RPEh	xu5pDH(abcde)	ru5pDH(abcde)	1
+RPIh	r5pH(abcde)	ru5pDH(abcde)	1
+PRUK	ru5pDH(abcde)	rb15bpH(badce)	0
+RBCh	rb15bpH(abcde)	n3pgH(ace) + n2pglycH(bd)	0
+PGP	n2pglycH(ab)	glycltH(ab)	0
+GCLDH	glycltH(ab)	glxH(ab)	0
+T_glx	glxH(ab)	glxC(ab)	0
+GOU	glxH(ac) + glxH(bd)	co2H(c) + serLH(abd)	0
+T_SER	serLH(abc)	serLC(abc)	0
+PGIAh	f6pBH(abcdef)	g6pAH(acdebf)	1
+PGMTh	g6pAH(abcdef)	g1pH(abcdef)	1
+GLPTHi	g1pH(abcdef)	adpglcH(faebdc)	0
+Biomass_starch	adpglcH	adpglcH.ex	0
+FBAc	dhapC(ace) + dhapC(bdf)	fdpBC(cdeabf)	0
+FPPc	fdpBC(abcdef)	f6pBC(abcdef)	0
+PGIc	f6pBC(abcdef)	g6pAC(acdebf)	0
+PGMTc	g6pAC(abcdef)	g1pC(abcdef)	0
+UG1PUT	g1pC(abcdef)	udpgC(faebdc)	0
+UFAGT	f6pBC + udpgC	f6pBC.ex + udpgC.ex	0
+FGAM_c	n3pgC(abc)	pepC(abc)	0
+PYK	pepC(abc)	pyrC(abc)	0
+PPC	pepC(bcd) + co2C(a)	oaaC(bcad)	0
+ALT	pyrC(abc)	alaLC(abc)	1
+MDHc	malLC(abcd)	oaaC(abcd)	0
+ASPTc	oaaC(abcd)	aspLC(badc)	1
+GLUDHc	akgC(abcde)	gluLC(acbed)	1
+EX_glu_L_c	gluLC	gluLC.ex	0
+EX_asp_L_c	aspLC	aspLC.ex	0
+T_T3P	n3pgH(abc)	n3pgC(abc)	1
+T_TP	dhapH(abc)	dhapC(abc)	1
+T_PEP	pepH(abc)	pepC(abc)	1
+CO2t	co2E(a)	co2C(a)	0
+CO2th	co2C(a)	co2H(a)	1
+ENO_h	n3pgH(abc)	pepH(abc)	1
+PYK_h	pepH(abc)	pyrH(abc)	0
+EX_pyr	pyrH	pyrH.ex	0
+EX_shikimate	pepH	pepH.ex	0
+EX_co2_e	co2E.ex	co2E	0
+EX_ala_L_c	alaLC	alaLC.ex	0
+EX_glx_c	glxC	glxC.ex	0
+EX_ser_c	serLC	serLC.ex	0
+PDHm	pyrM(abc)	acaM(ba) + co2M(c)	0
+CSm	acaM(ab) + oaaM(cdef)	citM(caebfd)	0
+ACONTm	citM(abcdef)	icitM(bfdaec)	1
+ICDHm	icitM(abcdef)	co2M(e) + akgM(badcf)	0
+AKGDHm	akgM(abcde)	co2M(e) + scaM(cdab)	0
+SUCOASm	scaM(abcd)	succM(cdab)	1
+SUCDm	succM(abcd)	fumM(abcd)	1
+FUMm	fumM(abcd)	malLM(badc)	1
+MDHm	malLM(abcd)	oaaM(abcd)	0
+ASPTAm	akgM(abcde) + aspLM(fghi)	oaaM(fghi) + gluLM(abcde)	0
+AATm	akgM(abcde) + alaLM(fgh)	pyrM(fgh) + gluLM(acbed)	1
+ICLm	icitM(abcdef)	succM(abce) + glxM(df)	0
+MALSm	acaM(ab) + glxM(cd)	malLM(acbd)	0
+MEm	malLM(abcd)	pyrM(abd) + co2M(c)	0
+PYKm	pepM(abc)	pyrM(abc)	0
+PYRtm	pyrC(abc)	pyrM(abc)	1
+MALtm	malLC(abcd)	malLM(abcd)	1
+OAAtm	oaaC(abcd)	oaaM(abcd)	1
+ASPtm	aspLC(abcd)	aspLM(abcd)	1
+GLUtm	gluLC(abcde)	gluLM(abcde)	1
+ALAtm	alaLC(abc)	alaLM(abc)	1
+PEPtm	pepC(abc)	pepM(abc)	1
+CO2tm	co2M(a)	co2C(a)	1
+AKGtm	akgM(abcde)	akgC(abcde)	1
